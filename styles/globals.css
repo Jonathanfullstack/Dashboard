@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.iconSidebar {
+  @apply text-black;
+  @apply bg-[#F3F4F6];
+  @apply text-[40px];
+  @apply p-1;
+  @apply rounded-md;
+  @apply cursor-pointer;
+  @apply border;
+  @apply border-gray-200;
+}
+
+.iconSidebar.active {
+  @apply bg-purple-500;
+  @apply text-white;
+  @apply border-gray-200;
+}
